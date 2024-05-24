@@ -7,7 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{B5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cataloge", "Cataloge", "{8D35C8BB-91F2-4410-A5F0-86078967644A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogeApi", "CatalogeApi\CatalogeApi.csproj", "{B832F704-462C-4345-98CA-902DF4E17F74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CatalogeApi", "CatalogeApi\CatalogeApi.csproj", "{B832F704-462C-4345-98CA-902DF4E17F74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{B0E054EA-7172-47C8-B0E1-F3C7A5B83BAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildingBlocks", "BuildingBlocks\BuildingBlocks.csproj", "{0E17E670-C7D6-47E4-A425-7B0B7E62F6CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +23,10 @@ Global
 		{B832F704-462C-4345-98CA-902DF4E17F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B832F704-462C-4345-98CA-902DF4E17F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B832F704-462C-4345-98CA-902DF4E17F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E17E670-C7D6-47E4-A425-7B0B7E62F6CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E17E670-C7D6-47E4-A425-7B0B7E62F6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E17E670-C7D6-47E4-A425-7B0B7E62F6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E17E670-C7D6-47E4-A425-7B0B7E62F6CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,6 +34,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8D35C8BB-91F2-4410-A5F0-86078967644A} = {B502A14C-6F78-45C4-B15C-A6DEF22F0ADF}
 		{B832F704-462C-4345-98CA-902DF4E17F74} = {8D35C8BB-91F2-4410-A5F0-86078967644A}
+		{0E17E670-C7D6-47E4-A425-7B0B7E62F6CF} = {B0E054EA-7172-47C8-B0E1-F3C7A5B83BAA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {478D1DB9-8F29-480F-B3A8-5A753030D86E}
