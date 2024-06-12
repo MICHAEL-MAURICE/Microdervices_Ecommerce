@@ -1,6 +1,6 @@
 ﻿namespace CatalogeApi.Models
 {
-    public class Proudect
+    public class Proudct
     {
         public Guid Id { get; set; }
         public string Name { get; set; } = default!;

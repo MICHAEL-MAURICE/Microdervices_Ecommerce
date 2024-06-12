@@ -1,17 +1,14 @@
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddMediatR(config =>
+{
+    config.RegisterServicesFromAssembly(typeof(Program).Assembly);
+    
+});
 
-// Add services to the container.
-
-builder.Services.AddControllers();
+builder.Services.AddCarter();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
+app.MapCarter();
 
 app.Run();
