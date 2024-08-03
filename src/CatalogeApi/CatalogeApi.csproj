@@ -7,11 +7,14 @@
     <InvariantGlobalization>true</InvariantGlobalization>
     <UserSecretsId>cb79e8ef-8341-4616-a480-0821d85b0dd6</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
    
     <PackageReference Include="Carter" Version="8.2.1" />
+   
+    <PackageReference Include="Marten" Version="7.26.1" />
    
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
   </ItemGroup>
