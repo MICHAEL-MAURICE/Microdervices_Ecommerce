@@ -1,9 +1,13 @@
 var builder = WebApplication.CreateBuilder(args);
+
+var assembly = typeof(Program).Assembly;
 builder.Services.AddMediatR(config =>
 {
     config.RegisterServicesFromAssembly(typeof(Program).Assembly);
     
 });
+
+builder.Services.AddValidatorsFromAssembly(assembly);
 
 builder.Services.AddMarten(opt => {
 
