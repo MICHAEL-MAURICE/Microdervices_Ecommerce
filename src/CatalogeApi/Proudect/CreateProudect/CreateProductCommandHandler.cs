@@ -10,16 +10,16 @@ public class CreateProductCommandHandler(IDocumentSession session) : ICommandHan
 {
     public async Task<CreateProductResult> Handle(CreateProductCommand Command, CancellationToken cancellationToken)
     {
-        var proudect = new Proudct
+        var proudect = new Product
         {
            Name = Command.Name,
            Discription=Command.Description,
-           Gategory=Command.Category,
+           Category=Command.Category,
            ImageFile=Command.ImageFile, 
            Price=Command.Price,
            
         };
-
+      
         session.Store(proudect);
         await session.SaveChangesAsync(cancellationToken);
 
