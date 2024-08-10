@@ -17,19 +17,12 @@ public class CreateProductCommandValidator : AbstractValidator<CreateProductComm
     }
 }
 
-public class CreateProductCommandHandler(IDocumentSession session,IValidator<CreateProductCommand> validater) : ICommandHandler<CreateProductCommand, CreateProductResult>
+public class CreateProductCommandHandler(IDocumentSession session) : ICommandHandler<CreateProductCommand, CreateProductResult>
 
 {
     public async Task<CreateProductResult> Handle(CreateProductCommand Command, CancellationToken cancellationToken)
     {
-        var result= await validater.ValidateAsync(Command, cancellationToken);  
-
-        var errors= result.Errors.Select(e=>e.ErrorMessage).ToList();
-
-        if (errors.Any())
-        {
-            throw new ValidationException(errors.FirstOrDefault());
-        }
+    
         var proudect = new Product
         {
            Name = Command.Name,

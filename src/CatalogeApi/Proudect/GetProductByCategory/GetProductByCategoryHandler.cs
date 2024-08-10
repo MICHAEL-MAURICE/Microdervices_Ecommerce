@@ -3,6 +3,9 @@
 public record GetProductByCategoryQuery(string Category) : IQuery<GetProductByCategoryResult>;
 public record GetProductByCategoryResult(IEnumerable<Product> Products);
 
+
+
+
 internal class GetProductByCategoryQueryHandler
     (IDocumentSession session)
     : IQueryHandler<GetProductByCategoryQuery, GetProductByCategoryResult>
