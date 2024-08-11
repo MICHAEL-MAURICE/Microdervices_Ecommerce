@@ -1,4 +1,5 @@
 using BuildingBlocks.Behaviors;
+using BuildingBlocks.Exceptions.Handler;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,7 +19,7 @@ builder.Services.AddMarten(opt => {
     opt.Connection(builder.Configuration.GetConnectionString("Database")!);
 
 }).UseLightweightSessions();
-
+builder.Services.AddExceptionHandler<CustomExceptionHandler>();
 builder.Services.AddCarter();
 
 var app = builder.Build();
